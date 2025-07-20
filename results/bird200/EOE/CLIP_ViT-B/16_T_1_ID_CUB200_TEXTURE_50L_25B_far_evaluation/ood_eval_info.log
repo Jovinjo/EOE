@@ -1,0 +1,169 @@
+2025-07-12 19:34:33,672 : #########CUB200_TEXTURE_far_evaluation############
+2025-07-12 19:38:13,444 : Evaluating OOD dataset dtd
+2025-07-12 19:47:03,512 : in scores: DescribeResult(nobs=5794, minmax=(np.float32(-0.0039374144), np.float32(-0.0033088753)), mean=np.float32(-0.0036218099), variance=np.float64(7.763440206137011e-09), skewness=np.float64(-0.0349867045879364), kurtosis=np.float32(-0.006973028))
+2025-07-12 19:47:03,517 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0034998613), np.float32(-0.0029736771)), mean=np.float32(-0.0031871572), variance=np.float64(5.187900463303224e-09), skewness=np.float64(-0.42005494236946106), kurtosis=np.float32(0.078995466))
+2025-07-12 19:47:04,109 : 				EOE
+2025-07-12 19:47:04,116 :   FPR95 AUROC AUPR
+2025-07-12 19:47:04,123 : & 0.02 & 99.99 & 99.99
+2025-07-12 19:47:04,124 : 
+
+Mean Test Results
+2025-07-12 19:47:04,125 : 				EOE
+2025-07-12 19:47:04,126 :   FPR95 AUROC AUPR
+2025-07-12 19:47:04,128 : & 0.02 & 99.99 & 99.99
+2025-07-12 19:48:42,594 : Evaluating OOD dataset dtd
+2025-07-12 19:50:01,399 : in scores: DescribeResult(nobs=5794, minmax=(np.float32(-0.0033084142), np.float32(-0.0028245223)), mean=np.float32(-0.0030520936), variance=np.float64(5.168423766186058e-09), skewness=np.float64(-0.046687547117471695), kurtosis=np.float32(0.06527591))
+2025-07-12 19:50:01,414 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0029252472), np.float32(-0.0025466215)), mean=np.float32(-0.0026975705), variance=np.float64(2.878068265474449e-09), skewness=np.float64(-0.45720791816711426), kurtosis=np.float32(0.26179647))
+2025-07-12 19:50:02,720 : 				EOE
+2025-07-12 19:50:02,731 :   FPR95 AUROC AUPR
+2025-07-12 19:50:02,737 : & 0.00 & 99.99 & 99.99
+2025-07-12 19:50:02,743 : 
+
+Mean Test Results
+2025-07-12 19:50:02,748 : 				EOE
+2025-07-12 19:50:02,754 :   FPR95 AUROC AUPR
+2025-07-12 19:50:02,759 : & 0.00 & 99.99 & 99.99
+2025-07-12 19:52:01,354 : Evaluating OOD dataset dtd
+2025-07-12 19:53:21,639 : in scores: DescribeResult(nobs=5794, minmax=(np.float32(-0.0022228262), np.float32(-0.0018734911)), mean=np.float32(-0.0020376076), variance=np.float64(2.4437048961090355e-09), skewness=np.float64(0.07026629149913788), kurtosis=np.float32(-0.074220896))
+2025-07-12 19:53:21,643 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0019410981), np.float32(-0.0016516221)), mean=np.float32(-0.0017651605), variance=np.float64(1.3992215815385455e-09), skewness=np.float64(-0.4120877683162689), kurtosis=np.float32(0.31557322))
+2025-07-12 19:53:21,986 : 				EOE
+2025-07-12 19:53:21,988 :   FPR95 AUROC AUPR
+2025-07-12 19:53:21,990 : & 0.00 & 100.00 & 100.00
+2025-07-12 19:53:21,992 : 
+
+Mean Test Results
+2025-07-12 19:53:21,993 : 				EOE
+2025-07-12 19:53:21,995 :   FPR95 AUROC AUPR
+2025-07-12 19:53:21,997 : & 0.00 & 100.00 & 100.00
+2025-07-12 19:54:59,838 : Evaluating OOD dataset dtd
+2025-07-12 19:56:15,892 : in scores: DescribeResult(nobs=5794, minmax=(np.float32(-0.0019359961), np.float32(-0.0010505747)), mean=np.float32(-0.0015931862), variance=np.float64(8.375848111984108e-09), skewness=np.float64(0.2849658131599426), kurtosis=np.float32(0.4023564))
+2025-07-12 19:56:15,896 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0013778294), np.float32(-0.0007294251)), mean=np.float32(-0.0010634328), variance=np.float64(7.296037987873638e-09), skewness=np.float64(0.060403019189834595), kurtosis=np.float32(0.28363252))
+2025-07-12 19:56:16,213 : 				EOE
+2025-07-12 19:56:16,216 :   FPR95 AUROC AUPR
+2025-07-12 19:56:16,218 : & 0.00 & 99.99 & 99.99
+2025-07-12 19:56:16,220 : 
+
+Mean Test Results
+2025-07-12 19:56:16,221 : 				EOE
+2025-07-12 19:56:16,223 :   FPR95 AUROC AUPR
+2025-07-12 19:56:16,225 : & 0.00 & 99.99 & 99.99
+2025-07-12 19:57:54,662 : Evaluating OOD dataset dtd
+2025-07-12 19:59:12,125 : in scores: DescribeResult(nobs=5794, minmax=(np.float32(-0.0017028803), np.float32(-0.0011158967)), mean=np.float32(-0.0014274153), variance=np.float64(6.402524421215763e-09), skewness=np.float64(0.13974988460540771), kurtosis=np.float32(0.097366095))
+2025-07-12 19:59:12,130 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0012685747), np.float32(-0.0006657613)), mean=np.float32(-0.000956176), variance=np.float64(5.585480092863443e-09), skewness=np.float64(-0.01495871227234602), kurtosis=np.float32(0.30160975))
+2025-07-12 19:59:13,181 : 				EOE
+2025-07-12 19:59:13,189 :   FPR95 AUROC AUPR
+2025-07-12 19:59:13,199 : & 0.00 & 100.00 & 100.00
+2025-07-12 19:59:13,209 : 
+
+Mean Test Results
+2025-07-12 19:59:13,212 : 				EOE
+2025-07-12 19:59:13,217 :   FPR95 AUROC AUPR
+2025-07-12 19:59:13,226 : & 0.00 & 100.00 & 100.00
+2025-07-12 20:00:59,734 : Evaluating OOD dataset dtd
+2025-07-12 20:02:19,662 : in scores: DescribeResult(nobs=5794, minmax=(np.float32(-0.001268846), np.float32(-0.0008153755)), mean=np.float32(-0.0010550139), variance=np.float64(3.945031061937667e-09), skewness=np.float64(0.22572411596775055), kurtosis=np.float32(0.09471822))
+2025-07-12 20:02:19,667 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0009116444), np.float32(-0.00047768373)), mean=np.float32(-0.0006825481), variance=np.float64(3.5824369279427572e-09), skewness=np.float64(-0.06077508628368378), kurtosis=np.float32(0.055977106))
+2025-07-12 20:02:21,067 : 				EOE
+2025-07-12 20:02:21,070 :   FPR95 AUROC AUPR
+2025-07-12 20:02:21,084 : & 0.00 & 100.00 & 100.00
+2025-07-12 20:02:21,092 : 
+
+Mean Test Results
+2025-07-12 20:02:21,102 : 				EOE
+2025-07-12 20:02:21,111 :   FPR95 AUROC AUPR
+2025-07-12 20:02:21,119 : & 0.00 & 100.00 & 100.00
+2025-07-12 20:08:10,891 : Evaluating OOD dataset dtd
+2025-07-12 20:09:28,997 : in scores: DescribeResult(nobs=5794, minmax=(np.float32(-0.00612707), np.float32(-0.005317356)), mean=np.float32(-0.005696114), variance=np.float64(1.567329524948791e-08), skewness=np.float64(-0.13309940695762634), kurtosis=np.float32(-0.10947347))
+2025-07-12 20:09:29,003 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0057679457), np.float32(-0.005112402)), mean=np.float32(-0.0053473637), variance=np.float64(8.077742511057822e-09), skewness=np.float64(-0.47231942415237427), kurtosis=np.float32(0.20275927))
+2025-07-12 20:09:30,926 : 				MCM
+2025-07-12 20:09:30,934 :   FPR95 AUROC AUPR
+2025-07-12 20:09:30,936 : & 6.70 & 98.79 & 98.85
+2025-07-12 20:09:30,946 : 
+
+Mean Test Results
+2025-07-12 20:09:30,953 : 				MCM
+2025-07-12 20:09:30,961 :   FPR95 AUROC AUPR
+2025-07-12 20:09:30,969 : & 6.70 & 98.79 & 98.85
+2025-07-12 20:23:37,514 : Evaluating OOD dataset dtd
+2025-07-12 20:24:52,875 : in scores: DescribeResult(nobs=3669, minmax=(np.float32(-0.032776862), np.float32(-0.028267441)), mean=np.float32(-0.030399622), variance=np.float64(4.845653849470043e-07), skewness=np.float64(-0.09211401641368866), kurtosis=np.float32(-0.060034513))
+2025-07-12 20:24:52,879 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.031989742), np.float32(-0.027364923)), mean=np.float32(-0.028026737), variance=np.float64(1.2536840454578997e-07), skewness=np.float64(-1.4906368255615234), kurtosis=np.float32(5.1149263))
+2025-07-12 20:24:53,400 : 				MCM
+2025-07-12 20:24:53,401 :   FPR95 AUROC AUPR
+2025-07-12 20:24:53,402 : & 0.80 & 99.82 & 99.62
+2025-07-12 20:24:53,404 : 
+
+Mean Test Results
+2025-07-12 20:24:53,405 : 				MCM
+2025-07-12 20:24:53,406 :   FPR95 AUROC AUPR
+2025-07-12 20:24:53,407 : & 0.80 & 99.82 & 99.62
+2025-07-12 20:25:56,871 : Evaluating OOD dataset dtd
+2025-07-12 20:27:14,413 : in scores: DescribeResult(nobs=3669, minmax=(np.float32(-0.013311479), np.float32(-0.011055753)), mean=np.float32(-0.012259135), variance=np.float64(1.1295184995824713e-07), skewness=np.float64(0.02630564756691456), kurtosis=np.float32(0.11811662))
+2025-07-12 20:27:14,418 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.012724882), np.float32(-0.010216387)), mean=np.float32(-0.010753742), variance=np.float64(3.242863902099852e-08), skewness=np.float64(-1.1554871797561646), kurtosis=np.float32(5.1262426))
+2025-07-12 20:27:14,771 : 				EOE
+2025-07-12 20:27:14,779 :   FPR95 AUROC AUPR
+2025-07-12 20:27:14,782 : & 0.11 & 99.96 & 99.89
+2025-07-12 20:27:14,783 : 
+
+Mean Test Results
+2025-07-12 20:27:14,784 : 				EOE
+2025-07-12 20:27:14,785 :   FPR95 AUROC AUPR
+2025-07-12 20:27:14,786 : & 0.11 & 99.96 & 99.89
+2025-07-12 20:28:15,782 : Evaluating OOD dataset dtd
+2025-07-12 20:29:32,017 : in scores: DescribeResult(nobs=3669, minmax=(np.float32(-0.010083891), np.float32(-0.008347314)), mean=np.float32(-0.009197965), variance=np.float64(6.685597140820469e-08), skewness=np.float64(-0.07830316573381424), kurtosis=np.float32(0.0992794))
+2025-07-12 20:29:32,022 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.009465594), np.float32(-0.007674936)), mean=np.float32(-0.008074825), variance=np.float64(1.8903328348759807e-08), skewness=np.float64(-1.028343677520752), kurtosis=np.float32(4.0489635))
+2025-07-12 20:29:33,443 : 				EOE
+2025-07-12 20:29:33,456 :   FPR95 AUROC AUPR
+2025-07-12 20:29:33,464 : & 0.11 & 99.96 & 99.91
+2025-07-12 20:29:33,469 : 
+
+Mean Test Results
+2025-07-12 20:29:33,476 : 				EOE
+2025-07-12 20:29:33,482 :   FPR95 AUROC AUPR
+2025-07-12 20:29:33,487 : & 0.11 & 99.96 & 99.91
+2025-07-12 20:30:49,999 : Evaluating OOD dataset dtd
+2025-07-12 20:32:11,122 : in scores: DescribeResult(nobs=3669, minmax=(np.float32(-0.0032523335), np.float32(-0.002677844)), mean=np.float32(-0.0030013663), variance=np.float64(7.130334166434969e-09), skewness=np.float64(0.044339511543512344), kurtosis=np.float32(0.15889883))
+2025-07-12 20:32:11,127 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0030496938), np.float32(-0.0023782845)), mean=np.float32(-0.0025753442), variance=np.float64(2.984718989666653e-09), skewness=np.float64(-0.6385309100151062), kurtosis=np.float32(3.2196708))
+2025-07-12 20:32:11,471 : 				EOE
+2025-07-12 20:32:11,472 :   FPR95 AUROC AUPR
+2025-07-12 20:32:11,474 : & 0.09 & 99.97 & 99.92
+2025-07-12 20:32:11,476 : 
+
+Mean Test Results
+2025-07-12 20:32:11,478 : 				EOE
+2025-07-12 20:32:11,479 :   FPR95 AUROC AUPR
+2025-07-12 20:32:11,480 : & 0.09 & 99.97 & 99.92
+2025-07-12 20:33:10,684 : Evaluating OOD dataset dtd
+2025-07-12 20:34:28,055 : in scores: DescribeResult(nobs=3669, minmax=(np.float32(-0.005047529), np.float32(-0.0030310126)), mean=np.float32(-0.0041524223), variance=np.float64(8.787326557278475e-08), skewness=np.float64(-0.029869332909584045), kurtosis=np.float32(-0.050022364))
+2025-07-12 20:34:28,060 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.004463773), np.float32(-0.0018975567)), mean=np.float32(-0.0029051085), variance=np.float64(4.7477518649993213e-08), skewness=np.float64(0.47780874371528625), kurtosis=np.float32(2.422954))
+2025-07-12 20:34:29,676 : 				EOE
+2025-07-12 20:34:29,684 :   FPR95 AUROC AUPR
+2025-07-12 20:34:29,693 : & 0.11 & 99.94 & 99.87
+2025-07-12 20:34:29,700 : 
+
+Mean Test Results
+2025-07-12 20:34:29,708 : 				EOE
+2025-07-12 20:34:29,717 :   FPR95 AUROC AUPR
+2025-07-12 20:34:29,726 : & 0.11 & 99.94 & 99.87
+2025-07-12 20:35:32,274 : Evaluating OOD dataset dtd
+2025-07-12 20:36:47,374 : in scores: DescribeResult(nobs=3669, minmax=(np.float32(-0.0035372293), np.float32(-0.0019188747)), mean=np.float32(-0.0027935952), variance=np.float64(4.09949656947243e-08), skewness=np.float64(0.0779123529791832), kurtosis=np.float32(0.3014114))
+2025-07-12 20:36:47,379 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0030966308), np.float32(-0.0012856238)), mean=np.float32(-0.0019356434), variance=np.float64(2.3753034883328552e-08), skewness=np.float64(0.31553182005882263), kurtosis=np.float32(2.02149))
+2025-07-12 20:36:48,325 : 				EOE
+2025-07-12 20:36:48,331 :   FPR95 AUROC AUPR
+2025-07-12 20:36:48,338 : & 0.14 & 99.90 & 99.81
+2025-07-12 20:36:48,339 : 
+
+Mean Test Results
+2025-07-12 20:36:48,343 : 				EOE
+2025-07-12 20:36:48,345 :   FPR95 AUROC AUPR
+2025-07-12 20:36:48,346 : & 0.14 & 99.90 & 99.81
+2025-07-12 20:38:03,777 : Evaluating OOD dataset dtd
+2025-07-12 20:39:22,430 : in scores: DescribeResult(nobs=3669, minmax=(np.float32(-0.0019781082), np.float32(-0.0010767658)), mean=np.float32(-0.001598173), variance=np.float64(1.624450522915433e-08), skewness=np.float64(0.4758723974227905), kurtosis=np.float32(0.78232574))
+2025-07-12 20:39:22,435 : out scores: DescribeResult(nobs=5640, minmax=(np.float32(-0.0016648634), np.float32(-0.0005732365)), mean=np.float32(-0.0010668567), variance=np.float64(9.559140384731409e-09), skewness=np.float64(0.5885664820671082), kurtosis=np.float32(2.1581101))
+2025-07-12 20:39:24,147 : 				EOE
+2025-07-12 20:39:24,159 :   FPR95 AUROC AUPR
+2025-07-12 20:39:24,166 : & 0.20 & 99.85 & 99.78
+2025-07-12 20:39:24,173 : 
+
+Mean Test Results
+2025-07-12 20:39:24,181 : 				EOE
+2025-07-12 20:39:24,182 :   FPR95 AUROC AUPR
+2025-07-12 20:39:24,183 : & 0.20 & 99.85 & 99.78

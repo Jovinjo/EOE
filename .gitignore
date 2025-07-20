@@ -8,5 +8,5 @@ __pycache__/
 venv
 # ignore data and output directory
 datasets/
-results*/
+# results*/
 plot/

@@ -1,0 +1,25 @@
+2025-07-18 16:21:55,862 : #########CIFAR10_CIFAR100_15L_75B_near_evaluation############
+2025-07-18 16:27:56,593 : Evaluating OOD dataset cifar100_OOD
+2025-07-18 16:30:07,779 : in scores: DescribeResult(nobs=10000, minmax=(np.float32(-0.0028870367), np.float32(-0.001688418)), mean=np.float32(-0.0023547765), variance=np.float64(3.593697618936742e-08), skewness=np.float64(0.023890214040875435), kurtosis=np.float32(-0.229846))
+2025-07-18 16:30:07,785 : out scores: DescribeResult(nobs=10000, minmax=(np.float32(-0.0026647337), np.float32(-0.0013654856)), mean=np.float32(-0.0020707587), variance=np.float64(2.622389820712709e-08), skewness=np.float64(0.2986343502998352), kurtosis=np.float32(0.9342673))
+2025-07-18 16:30:08,451 : 				EOE
+2025-07-18 16:30:08,453 :   FPR95 AUROC AUPR
+2025-07-18 16:30:08,457 : & 61.37 & 87.71 & 88.69
+2025-07-18 16:30:08,460 : 
+
+Mean Test Results
+2025-07-18 16:30:08,463 : 				EOE
+2025-07-18 16:30:08,464 :   FPR95 AUROC AUPR
+2025-07-18 16:30:08,466 : & 61.37 & 87.71 & 88.69
+2025-07-18 16:33:45,484 : Evaluating OOD dataset cifar100_OOD
+2025-07-18 16:35:46,545 : in scores: DescribeResult(nobs=10000, minmax=(np.float32(-0.0022361968), np.float32(-0.0013158056)), mean=np.float32(-0.0018211353), variance=np.float64(2.1662551740407784e-08), skewness=np.float64(0.030344562605023384), kurtosis=np.float32(-0.27462935))
+2025-07-18 16:35:46,550 : out scores: DescribeResult(nobs=10000, minmax=(np.float32(-0.0020766393), np.float32(-0.0010629981)), mean=np.float32(-0.0015980474), variance=np.float64(1.5101742350003724e-08), skewness=np.float64(0.2238897681236267), kurtosis=np.float32(0.9614601))
+2025-07-18 16:35:46,970 : 				EOE
+2025-07-18 16:35:46,972 :   FPR95 AUROC AUPR
+2025-07-18 16:35:46,974 : & 60.32 & 88.05 & 89.04
+2025-07-18 16:35:46,975 : 
+
+Mean Test Results
+2025-07-18 16:35:46,978 : 				EOE
+2025-07-18 16:35:46,980 :   FPR95 AUROC AUPR
+2025-07-18 16:35:46,982 : & 60.32 & 88.05 & 89.04
