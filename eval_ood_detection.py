@@ -1,5 +1,5 @@
 import os
-os.environ['CURL_CA_BUNDLE'] = ''  # For SSLError: HTTPSConnectionPool
+os.environ['CURL_CA_BUNDLE'] = ''
 import argparse
 import numpy as np
 import torch
@@ -12,7 +12,7 @@ from utils.plot_util import plot_distribution
 from utils.train_eval_util import set_model_clip, set_val_loader, set_ood_loader
 from utils.generate_llm_class import load_llm_classes
 from utils.args_pool import *
-from utils.synonym_fetcher import SynonymFetcher  # ← Make sure this is where you saved the class
+from utils.synonym_fetcher import SynonymFetcher 
 
 def main():
     args = process_args()
@@ -27,15 +27,14 @@ def main():
     out_datasets = dataset_mappings.get(args.in_dataset, [])
     test_loader = set_val_loader(args, preprocess)
     test_labels = list(get_test_labels(args, test_loader))
-    print("✅ Original ID Labels:", test_labels)
+    print("Original ID Labels:", test_labels)
 
-    # === LLM-generated OOD candidate class labels ===
     if args.score == 'EOE':
-        print("🔮 Using LLM-generated OOD candidate classes...")
+        print("Using LLM-generated OOD candidate classes...")
         base_ood_labels = load_llm_classes(args, test_labels)
 
         if args.use_synonyms:
-            print("🔁 Augmenting OOD candidates with synonyms...")
+            print("Augmenting OOD candidates with synonyms...")
             synonym_fetcher = SynonymFetcher()
             class_type = synonym_fetcher.dataset_info[args.in_dataset]["class_type"]
 
@@ -52,21 +51,21 @@ def main():
             combined = base_ood_labels + synonym_labels
             filtered = [label for label in combined if label and label.lower() not in {"none", "null"}]
             llm_labels = list(dict.fromkeys(filtered))  # Deduplicate
-            print(f"📏 OOD classes before synonym expansion: {original_count}")
-            print(f"📐 OOD classes after synonym + deduplication: {len(llm_labels)}")
+            print(f"OOD classes before synonym expansion: {original_count}")
+            print(f"OOD classes after synonym + deduplication: {len(llm_labels)}")
         else:
             llm_labels = base_ood_labels
     else:
         llm_labels = []
 
-    print(f"\n🧪 Final ID Labels passed to CLIP: {test_labels}")
-    print(f"🚫 OOD candidate labels: {llm_labels}\n")
+    print(f"\n Final ID Labels passed to CLIP: {test_labels}")
+    print(f"OOD candidate labels: {llm_labels}\n")
 
     in_score = get_ood_scores_clip(args, net, test_loader, test_labels, llm_labels)
     auroc_list, aupr_list, fpr_list = [], [], []
 
     for out_dataset in out_datasets:
-        log.debug(f"📦 Evaluating OOD dataset {out_dataset}")
+        log.debug(f"Evaluating OOD dataset {out_dataset}")
         ood_loader = set_ood_loader(args, out_dataset, preprocess)
         out_score = get_ood_scores_clip(args, net, ood_loader, test_labels, llm_labels)
 
@@ -75,7 +74,7 @@ def main():
         plot_distribution(args, in_score, out_score, out_dataset)
         get_and_print_results(args, log, in_score, out_score, auroc_list, aupr_list, fpr_list)
 
-    log.debug('\n\n📊 Mean Test Results')
+    log.debug('\n\n Mean Test Results')
     print_measures(log, np.mean(auroc_list), np.mean(aupr_list), np.mean(fpr_list), method_name=args.score)
     save_as_dataframe(args, out_datasets, fpr_list, auroc_list, aupr_list)
 
