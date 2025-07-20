@@ -11,39 +11,17 @@ from matplotlib.ticker import ScalarFormatter
 
 def plot_distribution(args, id_scores, ood_scores, out_dataset):
     sns.set(style="white", palette="muted")
-    # palette = ['#A8BAE3', '#55AB83']
-    # palette = ['#A8BAE3', '#FF9999']
     palette = ['#8E8BFE', '#FEA3A2']
     sns_plt = sns.displot({"ID":-1 * id_scores, "OOD": -1 * ood_scores}, label="id", kind = "kde", 
                           palette=palette, fill = True, alpha = 0.8, linewidth=3, legend=False)
-    # sns_plt._legend.set_bbox_to_anchor((0.85, 0.85))
     plt.xticks([])
     plt.yticks([])
 
-    ax = plt.gca()  # 获取当前的ax对象
+    ax = plt.gca() 
     for spine in ax.spines.values():
-        spine.set_linewidth(3)  # 设置线条宽度为2
+        spine.set_linewidth(3)
 
     plt.savefig(os.path.join(args.log_directory,f"{args.score}_{out_dataset}.png"), bbox_inches='tight')
-
-# def plot_distribution(args, id_scores, ood_scores, out_dataset):
-#     sns.set(style="white", palette="muted")
-#     palette = ['#A8BAE3', '#55AB83']
-    
-#     sns_plt = sns.displot({"ID": -1 * id_scores, "OOD": -1 * ood_scores}, label="id", kind="kde", palette=palette, fill=True, alpha=0.8)
-#     sns_plt._legend.set_bbox_to_anchor((0.85, 0.85))
-    
-#     # Set x-axis to scientific notation
-#     ax = plt.gca()  # 获取当前的轴
-#     formatter = ScalarFormatter(useMathText=True)
-#     ax.xaxis.set_major_formatter(formatter)
-#     ax.ticklabel_format(style='sci', scilimits=(-3,4), axis='x')
-    
-#     # Ensure that the font of scientific notation matches other x-axis labels
-#     ax.xaxis.get_offset_text().set_fontsize(plt.rcParams['xtick.labelsize'])
-    
-#     plt.savefig(os.path.join(args.log_directory, f"{args.score}_{out_dataset}.png"), bbox_inches='tight')
-
 
 def show_values_on_bars(axs):
     def _show_on_single_plot(ax):        

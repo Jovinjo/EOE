@@ -76,11 +76,11 @@ async def obtain_gpt_class_and_save(args, file_path, class_list):
                 class_info=cls,
                 envision_nums=args.L
             )
-            print(f"\n🔵 Prompt for class '{cls}':\n{prompt}\n")
+            print(f"\n Prompt for class '{cls}':\n{prompt}\n")
             response = get_completion(args, prompt)
             response_texts.append(response)
             descriptors[cls] = stringtolist(response)
-        print(f"\n🔍 Raw GPT output for all classes:\n{response_texts}")
+        print(f"\n Raw GPT output for all classes:\n{response_texts}")
 
     elif args.ood_task in ['far', 'fine_grained']:
         envision_nums = 50
@@ -92,7 +92,7 @@ async def obtain_gpt_class_and_save(args, file_path, class_list):
             class_info=class_list,
             envision_nums=envision_nums
         )
-        print("🔵 Generating initial prompt...")
+        print("Generating initial prompt...")
         response_texts = get_completion(args, prompt)
 
         context = [{"role": "user", "content": prompt},
@@ -114,7 +114,7 @@ async def obtain_gpt_class_and_save(args, file_path, class_list):
     else:
         raise ValueError(f"Unsupported OOD task: {args.ood_task}")
 
-    print(f"\n💾 Saving envisioned class descriptors to: {file_path}")
+    print(f"\n Saving envisioned class descriptors to: {file_path}")
     with open(file_path, 'w') as fp:
         json.dump(descriptors, fp)
 
@@ -138,9 +138,9 @@ def load_llm_classes(args, test_labels):
     else:
         file_path = os.path.join(folder_path, f"{args.in_dataset}_{args.llm_model}_{args.json_number}.json")
 
-    print('=== Loading envisioned class JSON from:', file_path)
+    print('Loading envisioned class JSON from:', file_path)
     gpt_class_dict = load_json(file_path)
-    print('✓ Loaded Envisioned Candidate Class Names.')
+    print('Loaded Envisioned Candidate Class Names.')
 
     gpt_class = []
     for value in gpt_class_dict.values():

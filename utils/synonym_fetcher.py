@@ -15,10 +15,6 @@ class SynonymFetcher:
         }
 
     def fetch(self, name: str, in_dataset: str) -> str:
-        """
-        Fetch a synonym, scientific name, or name in another language for the given class label,
-        using dataset metadata to determine class_type.
-        """
         class_type = self.dataset_info[in_dataset]["class_type"]
 
         system_prompt = (
@@ -47,7 +43,6 @@ class SynonymFetcher:
 
             raw = response.choices[0].message.content.strip()
 
-            # Clean up any unnecessary formatting
             if ":" in raw:
                 raw = raw.split(":")[-1].strip()
             if "known as" in raw:
@@ -55,5 +50,5 @@ class SynonymFetcher:
 
             return raw.rstrip(".")
         except Exception as e:
-            print(f"[ERROR] Failed to fetch synonym for '{name}': {e}")
+            print(f"ERROR: Failed to fetch synonym for '{name}': {e}")
             return name

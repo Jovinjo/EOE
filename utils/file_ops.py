@@ -5,7 +5,7 @@ import pandas as pd
 
 # Score Saving and Loading
 def save_scores(args, scores, dataset_name):
-    os.makedirs(args.log_directory, exist_ok=True)  # Ensures directory exists
+    os.makedirs(args.log_directory, exist_ok=True) 
     with open(os.path.join(args.log_directory, f'{dataset_name}_scores.npy'), 'wb') as f:
         np.save(f, scores)
 
@@ -17,7 +17,7 @@ def load_scores(args, dataset_name):
 # Logger
 def setup_log(args):
     log = logging.getLogger(__name__)
-    if not log.handlers:  # Prevent duplicate handlers
+    if not log.handlers: 
         formatter = logging.Formatter('%(asctime)s : %(message)s')
         fileHandler = logging.FileHandler(os.path.join(args.log_directory, "ood_eval_info.log"), mode='w')
         fileHandler.setFormatter(formatter)
@@ -29,7 +29,7 @@ def setup_log(args):
         log.debug(f"#########{args.name}############")
     return log
 
-# ========== DataFrame Logging ==========
+# DataFrame Logging
 def save_as_dataframe(args, out_datasets, fpr_list, auroc_list, aupr_list):
     os.makedirs(args.log_directory, exist_ok=True)
 
