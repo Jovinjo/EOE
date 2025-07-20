@@ -1,4 +1,5 @@
-### Illustration
+<h1 align="center">Experiments on Envisioning Outlier Exposure (EOE)</h1>
+
 ![](img/framework.png)
 
 This repository contains experiments **based on** the paper **"Envisioning Outlier Exposure by Large Language Models for Out-of-Distribution Detection"** published at **ICML 2024** by Cao et al. We build on the **[official codebase](https://github.com/Aboriginer/EOE)** and paper[arXiv:2406.00806](https://arxiv.org/pdf/2406.00806)
