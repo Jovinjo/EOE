@@ -5,6 +5,7 @@
 __pycache__/
 
 .env
+venv
 # ignore data and output directory
 datasets/
 results*/
