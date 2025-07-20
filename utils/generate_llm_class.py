@@ -125,7 +125,7 @@ def load_llm_classes(args, test_labels):
     if args.ood_task in ['far', 'fine_grained']:
         assert args.L in [50, 100, 300, 500], "L must be one of [50, 100, 300, 500] for far/fine_grained"
     elif args.ood_task == 'near':
-        assert args.L in [1, 3, 5, 10], "L must be in [1, 3, 5, 10] for near"
+        assert args.L in [1, 3, 10], "L must be in [1, 3, 5, 10] for near"
 
     folder_path = os.path.join("envisioned_classes", f'{args.ood_task}_{args.L}')
     os.makedirs(folder_path, exist_ok=True)
