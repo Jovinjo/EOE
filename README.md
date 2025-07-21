@@ -12,7 +12,7 @@ Detecting out-of-distribution (OOD) samples is an important step when deploying 
 ### Dependencies
 ```bash
 pip install -r requirements.txt
-# what's more, please add your openai in .env
+# please add your openai in .env
 touch .env
 echo "OPENAI_API_KEY=your_openai_api_key_here" >> .env
 ```
