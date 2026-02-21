@@ -4,7 +4,7 @@
 
 This repository contains experiments **based on** the paper **"Envisioning Outlier Exposure by Large Language Models for Out-of-Distribution Detection"** published at **ICML 2024** by Cao et al. It is build on the [codebase](https://github.com/Aboriginer/EOE) and paper [arXiv](https://arxiv.org/pdf/2406.00806)
 
-## Recognition
+### Recognition
 This Anomaly Detection project was awarded **Best Pitch Presentation**. [View Certificate](recognition-certificate.pdf)
 
 ### Abstract
