@@ -4,9 +4,11 @@
 
 This repository contains experiments **based on** the paper **"Envisioning Outlier Exposure by Large Language Models for Out-of-Distribution Detection"** published at **ICML 2024** by Cao et al. It is build on the [codebase](https://github.com/Aboriginer/EOE) and paper [arXiv](https://arxiv.org/pdf/2406.00806)
 
+## Recognition
+This Anomaly Detection project was awarded **Best Pitch Presentation**. [View Certificate](recognition-certificate.pdf)
+
 ### Abstract
 Detecting out-of-distribution (OOD) samples is an important step when deploying machine learning models in real-world settings, where unexpected inputs can often occur. The EOE (Envisioning Outlier Exposure) method tackles this challenge in a zero-shot setting, meaning it doesn’t require access to OOD data during training. Instead, it uses large language models (LLMs) like GPT to generate imagined outlier labels that are visually similar but semantically different from the known classes. These envisioned labels help expand the classifier’s understanding of what “unknown” might look like. In this project, I explored how well EOE works across three common OOD tasks: far, near, and fine-grained detection. I followed the original setup for far and fine-grained tasks but used CIFAR-10 and CIFAR-100 for near-OOD detection. I also extended the original method by adding semantic variants pipeline to the envisioned outlier labels. This helped improve the model’s ability to detect subtle differences, especially in fine-grained tasks. Overall, the results confirm EOE’s effectiveness and show that enriching the outlier label pool with diverse terms can further boost performance.
-
 
 ## Setup
 ### Dependencies
